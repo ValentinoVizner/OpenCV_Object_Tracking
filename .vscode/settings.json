@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "/home/vaba/Desktop/podatci/Python/Python_PyImageSearch_DL4Cv/Day_5_Object_Tracking/.venv/bin/python3",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.enabled": true,
+    "git.ignoreLimitWarning": true
+}

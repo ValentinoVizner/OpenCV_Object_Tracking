@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "day_5_object_tracking"
+version = "0.1.0"
+description = "Object tracking with OpenCV"
+authors = ["Valentino Vizner <valentino.vizner@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.18.1"
+mypy = "^0.761"
+black = "^19.10b0"
+opencv-contrib-python = "^4.1.2"
+scikit-image = "^0.16.2"
+pillow = "^7.0.0"
+imutils = "^0.5.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

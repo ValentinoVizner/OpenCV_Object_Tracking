@@ -21,5 +21,19 @@ ap.add_argument(
 ap.add_argument("-b", "--buffer", type=int, default=64, help="max buffer size")
 args = vars(ap.parse_args())
 
+# define the lower and upper boundaries of the green ball in HSV color space
+greenLower = (29, 86, 6)
+greenUpper = (64, 255, 255)
+points = deque(maxlen=args["buffer"])
+
+# if a video path was not supplied, grab the reference to the webcam
+if not args.get("video", False):
+    video_stream = VideoStream(src=0).start()
+
+else:
+    video_stream = cv2.VideoCapture(args["video"])
+
+# allow the camera or video file to warm up
+time.sleep(2.0)
 
 # python ball_tracking.py --video ball_tracking_example.mp4
